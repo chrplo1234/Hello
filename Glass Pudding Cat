@@ -1,0 +1,27 @@
+let a = prompt("Choose a character: Glass, pudding, or cat?");
+let b = prompt("Choose a character: Glass, pudding, or cat?");
+function glassPuddingCat(){
+ if (a == "glass" && b == "pudding"){
+   console.log("Player 1 wins!");
+ }else if (a == "pudding" && b == "cat"){
+   console.log("Player 1 wins!");
+ }else if (a == "cat" && b == "glass"){
+   console.log("Player 1 wins!");
+ }else if (b == "glass" && a == "pudding"){
+   console.log("Player 2 wins!");
+ }else if (b == "pudding" && a == "cat"){
+   console.log("Player 2 wins!");
+ }else if (b == "cat" && a == "glass"){
+   console.log("Player 2 wins!");
+ }else if (a == b){
+   console.log("TIE!");
+ }else{
+    if (a != "cat" && a != "pudding" && a != "glass"){
+   console.log("Player 1 has invalid input of " + a)
+   }
+   if (b != "cat" && b != "pudding" && b != "glass"){
+     console.log("Player 2 has invalid input of " + b)
+   }
+ }
+}
+ glassPuddingCat();
