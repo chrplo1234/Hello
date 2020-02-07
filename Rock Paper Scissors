@@ -1,0 +1,27 @@
+let a = prompt("Choose a character: Rock, Paper, or Scissors");
+let b = prompt("Choose a character: Rock, Paper, or Scissors?");
+function rockPaperScissors(){
+ if (a == "rock" && b == "paper"){
+   console.log("Player 1 wins!");
+ }else if (a == "paper" && b == "scissors"){
+   console.log("Player 1 wins!");
+ }else if (a == "scissors" && b == "rock"){
+   console.log("Player 1 wins!");
+ }else if (b == "rock" && a == "paper"){
+   console.log("Player 2 wins!");
+ }else if (b == "pudding" && a == "scissors"){
+   console.log("Player 2 wins!");
+ }else if (b == "scissors" && a == "rock"){
+   console.log("Player 2 wins!");
+ }else if (a == b){
+   console.log("TIE!");
+ }else{
+    if (a != "scissors" && a != "paper" && a != "rock"){
+   console.log("Player 1 has invalid input of " + a)
+   }
+   if (b != "scissors" && b != "paper" && b != "rock"){
+     console.log("Player 2 has invalid input of " + b)
+   }
+ }
+}
+ rockPaperScissors();
